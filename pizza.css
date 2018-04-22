@@ -1,0 +1,238 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 4
+   Case Problem 2
+
+   Pizza Style Sheet
+      Author: Zachary Ledoux
+      Date:   04/20/18
+
+   Filename:         pizza.css
+   Supporting Files: 
+
+*/
+
+
+
+
+
+
+/* Default styles
+---------------------------*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Body styles
+---------------------------*/
+
+body {
+    background-color: red;
+    font-family: 'Verdana', Geneva, sans-serif;
+}
+
+
+/* Main Container styles
+---------------------------*/
+
+#container {
+    width: 1000px;
+    margin: 0px auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-color: white;
+    background-image: url("redbar.png");
+    background-position: top left;
+}
+
+
+
+
+/* Header styles
+---------------------------*/
+
+header {
+    display: block;
+    background-color: white;
+    height: 100px;
+}
+
+
+/* Nav styles
+---------------------------*/
+
+nav {                    /* for the horizontal menu directly beneath the header and above the content portion of the page */
+    display: block;
+}
+
+.horizontal {
+    height: 70px;
+    width: auto;
+    background-color: white;
+}
+
+.horizontal ul {
+    list-style: none;
+}
+
+.horizontal ul li {
+    display: block;
+    float: left;
+    margin: 0px 5px;
+    height: 50px;
+    width: 180px;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.horizontal ul li a {
+    display: block;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+
+    -o-border-radius: 25px 30px;
+    -moz-border-radius: 25px 30px;
+    -webkit-border-radius: 25px 30px;
+    border-radius: 25px 30px;
+}
+
+.horizontal ul li a:hover {
+    background-color: rgb(255, 101, 101);
+    color: black;
+}
+
+.vertical {             /* for the vertical menu to the left of the page; left of section */
+    float: left;
+    width: 200px;
+}
+
+.vertical ul {
+    list-style: none;
+    background-color: #C00000;
+}
+
+.vertical ul li {
+    text-indent: 20px;
+    margin: 20px 0px;
+}
+
+.vertical ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.vertical ul li a:hover {
+    color: black;
+}
+
+
+
+
+/* Section styles
+---------------------------*/
+
+#main {             /*for the beginning half of the section portion */
+    float: left;
+    width: 600px;
+    background-color: rgb(255, 211, 211);
+    position: relative;
+}
+
+#main > p {
+    font-size: 20px;
+    margin: 15px;
+}
+
+#main img {
+    float: right;
+    margin: 15px;
+    width: 350px;
+    
+    -o-border-radius: 0px 0px 0px 350px;
+    -moz-border-radius: 0px 0px 0px 350px;
+    -webkit-border-radius: 0px 0px 0px 350px;
+    border-radius: 0px 0px 0px 350px;
+}
+
+.coupon {           /* for the lower half of the section portion */
+    border: 5px dashed black;
+    float: left;
+    width: 170px;
+    height: 150px;
+    margin: 20px 10px;
+    background: url("slice.png") no-repeat center, 
+                url("notice.png") no-repeat bottom right;
+    background-color: white;
+}
+
+.coupon h1 {
+    color: white;
+    background: rgb(192, 0, 0);
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+    height: 25px;
+    font-variant: small-caps;
+}
+
+.coupon p {
+    font-size: 14px;
+    text-align: center;
+    margin: 5px;
+}
+
+
+/* Aside styles
+---------------------------*/
+
+aside {
+    display: block;
+    float: left;
+    width: 200px;
+    background-color: white;
+}
+
+aside h1 {
+    color: rgb(192, 0, 0);
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    text-align: center;
+}
+
+aside ul li {
+    background-color: rgb(255, 135, 135);
+    border-radius: 5px;
+    color: black;
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+
+/* Footer styles
+---------------------------*/
+
+footer {
+    display: block;
+    clear: left;
+    margin-left: 200px;
+    text-align: center;
+    color: #E6857F;
+
+}
+
+footer address {
+    border: 1px solid red;
+    color: red;
+    font-style: normal;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 20px;
+}
